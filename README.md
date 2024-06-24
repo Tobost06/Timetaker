@@ -1,5 +1,5 @@
 # Timetaker
-A timetaker PowerShell-script that outputs into a .txt file.
+A timetaker PowerShell-script that outputs into a textfile.
 
 You might have to change your computer's PowerShell execution policy, see here: https:/go.microsoft.com/fwlink/?LinkID=135170
 
