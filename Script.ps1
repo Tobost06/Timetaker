@@ -23,7 +23,7 @@ function Stop-Logging {
 # Hovedmeny
 while ($true) {
     Clear-Host
-    Write-Host "Minecraft tidstager"
+    Write-Host "Tidstager"
     Write-Host "1. Start logging"
     Write-Host "2. Stopp logging"
     Write-Host "3. Avslutt"
