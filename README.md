@@ -9,7 +9,7 @@ You might have to change your computer's PowerShell execution policy, see here: 
 
 "Sluttet" = "Ended"
 
-"Minecraft tidstager" = "Minecraft timetaker"
+"Tidstager" = "Timetaker"
 
 "1. Start logging" = "1. Start logging"
 
