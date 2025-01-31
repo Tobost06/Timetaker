@@ -12,22 +12,22 @@ function Log-Message {
 
 # Start tidsporing
 function Start-Logging {
-    Log-Message "Startet"
+    Log-Message "Started"
 }
 
 # Stopp tidsporing
 function Stop-Logging {
-    Log-Message "Sluttet"
+    Log-Message "Ended"
 }
 
 # Hovedmeny
 while ($true) {
     Clear-Host
-    Write-Host "Tidstager"
+    Write-Host "Timetaker"
     Write-Host "1. Start logging"
-    Write-Host "2. Stopp logging"
-    Write-Host "3. Avslutt"
-    $choice = Read-Host "Velg noe (1, 2, 3)"
+    Write-Host "2. Stop logging"
+    Write-Host "3. Quit"
+    $choice = Read-Host "Choose an option (1, 2, 3)"
 
     switch ($choice) {
         1 {
@@ -37,11 +37,11 @@ while ($true) {
             Stop-Logging
         }
         3 {
-            Write-Host "Avslutter script"
+            Write-Host "Quitting script"
             Stop-Process -Id $PID
         }
         default {
-            Write-Host "Ugyldig valg. Velg 1, 2, eller 3."
+            Write-Host "Invalid choice. Choose 1, 2, or 3."
         }
     }
 }
