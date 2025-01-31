@@ -1,7 +1,7 @@
-# Definer banen til loggfilen
+# Define the log file path
 $logFile = "C:\filepath here"
 
-# Funksjon for logging av meldinger til filen
+# Function for message logging to the file
 function Log-Message {
     param (
         [string]$message
@@ -10,17 +10,17 @@ function Log-Message {
     "$timestamp - $message" | Out-File -Append $logFile
 }
 
-# Start tidsporing
+# Start timetaking
 function Start-Logging {
     Log-Message "Started"
 }
 
-# Stopp tidsporing
+# Stop timetaking
 function Stop-Logging {
     Log-Message "Ended"
 }
 
-# Hovedmeny
+# Main menu
 while ($true) {
     Clear-Host
     Write-Host "Timetaker"
